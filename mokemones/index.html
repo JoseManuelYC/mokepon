@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Mokemones</title>
+</head>
+<body>
+        <section id="seleccionar-mascota">
+            <img src="./img/titulo.png" id="titulo">
+           
+            <h2>Elige a tu mascota:</h2>
+            
+            <!--Mascotas van en este site-->
+            <div id='contenedor-tarjetas' class="contenedor-mascotas">
+
+<!--                <input type="radio" id="hipodogue" name="mascota">
+                <label class="tarjetas" for="hipodogue"><p>Hipodogue</p><img src="/mokemones/img/hipodogue.png" alt=""></label>
+               <input type="radio" name="mascota" id="capipepo">
+                <label class="tarjetas" for="capipepo"><p>Capipepo</p><img src="/mokemones/img/capipepo.png" alt=""></label>
+                <input type="radio" name="mascota" id="ratigueya">
+                <label class="tarjetas" for="ratigueya"><p>Ratigueya</p><img src="/mokemones/img/ratigueya.png" alt=""></label>
+ -->                    
+           </div>
+
+           <button id="btn-mascota">Elegir</button>
+
+        </section>
+        
+        <section id="ver-map">
+            <img src="./img/titulo.png" id="titulo">
+            <h2>¡Recorre el mapa con tu Mokepon!</h2>
+            <canvas id="mapa"></canvas>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+            <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+        </section>
+   
+    <section id="seleccionar-ataque">
+        <img src="./img/titulo.png" id="titulo">
+ 
+        <h2>¡Elige tu ataque!</h2> 
+
+        <div id="contenedorAtaques" class="contenedor-ataque">
+<!--             <button id="btn-fuego">FUEGO!</button> 
+            <button id="btn-agua">AGUA!</button>
+            <button id="btn-tierra">TIERRA!</button> -->
+        </div>
+
+        <div id="mensaje">
+                <p id="resultado">Esperando ataques...</p>
+
+            <section id="reiniciar">
+                    <button id="btn-reiniciar">Reiniciar</button>
+            </section>
+
+        </div>
+
+        <div class="contenedor-batalla">
+
+            <div id="imagen-miniatura" class="contenedor-ataque-jugador">
+                <p>Vidas</p>            
+                <p id="nom-jug"></p>
+                <p id="vida-jug">0</p> 
+                <div id="ataque-jugador"></div>
+            </div>
+
+
+            <div class="contenedor-ataque-enemigo">
+                <p>Vidas</p>
+                <p id="nom-enem"></p>
+                <p id="vida-ene">0</p>
+                <div id="ataque-enemigo"></div>
+            </div>
+        
+        </div>
+
+    </section>
+        <script src="./js/js.js"></script>
+
+</body>
+</html>
